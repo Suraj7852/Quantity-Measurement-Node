@@ -2,7 +2,7 @@
   "name": "quantity-measurement",
   "version": "1.0.0",
   "description": "",
-  "main": "quantityMeasurement.js",
+  "main": "inch.js",
   "directories": {
     "test": "test"
   },

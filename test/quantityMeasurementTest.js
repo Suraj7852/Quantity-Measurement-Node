@@ -1,5 +1,5 @@
 let assert = require('assert');
-let inch = require('../main/quantityMeasurement');
+let inch = require('../main/inch');
 describe('Inch to Inch', function() {
     it('should return true if 0inch and 0inch passed', function() {
         inch1 = new inch(0);
