@@ -49,9 +49,18 @@ describe('feet to feet', function() {
 
  describe('feet to inch', ()=> {
     it('should return false if 2 different unit type sent', () => {
-        length1 = new length(unit.FEET,0);
-        length2 = new length(unit.INCH,0);
+        length1 = new length(unit.FEET,1);
+        length2 = new length(unit.INCH,1);
         let lengthObj = length1.equal(length1,length2);
         assert.equal(lengthObj,false);
+    })
+
+    it('should return true if 12inch and 1 feet sent', () => {
+        length1 = new length(unit.FEET,1);
+        length2 = new length(unit.INCH,12);
+        let lengthObj = length1.equal(length1,length2);
+        console.log(lengthObj);
+        let lengthObj1 = length1.feetToInch(1);
+        assert.equal(lengthObj1,12);
     })
  })
