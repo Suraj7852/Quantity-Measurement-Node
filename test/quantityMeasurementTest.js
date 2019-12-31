@@ -124,3 +124,45 @@ describe('inch to centimetre', () => {
         assert.equal(lengthObj, true);
     })
 })
+
+describe('adding two values', () => {
+    it('should return true if 2inch and 2inch sent', () => {
+        length1 = new length(unit.INCH, 2);
+        length2 = new length(unit.INCH, 2);
+        let lengthObj = length1.equal(length1, length2);
+        if(lengthObj){
+            let add = length1.add(length1,length2,unit.INCH);
+            assert.equal(add, 4)
+        }
+    })
+
+    it('should return true if 1feet and 2inch sent', () => {
+        length1 = new length(unit.FEET, 1);
+        length2 = new length(unit.INCH, 2);
+        let lengthObj = length1.equal(length1, length2);
+        if(lengthObj){
+            let add = length1.add(length1,length2,unit.INCH);
+            assert.equal(add, 14)
+        }
+    })
+
+    it('should return true if 1feet and 1feet sent', () => {
+        length1 = new length(unit.FEET, 1);
+        length2 = new length(unit.FEET, 1);
+        let lengthObj = length1.equal(length1, length2);
+        if(lengthObj){
+            let add = length1.add(length1,length2,unit.INCH);
+            assert.equal(add, 24)
+        }
+    })
+
+    it('should return true if 1feet and 1feet sent', () => {
+        length1 = new length(unit.INCH, 2);
+        length2 = new length(unit.CENTIMETER, 2.54);
+        let lengthObj = length1.equal(length1, length2);
+        if(lengthObj){
+            let add = length1.add(length1,length2,unit.INCH);
+            assert.equal(add, 3)
+        }
+    })
+})
