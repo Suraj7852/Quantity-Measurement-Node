@@ -6,8 +6,9 @@ const Length = {
 }
 
 const Volume = {
-    GALLON: 3.78,
-    LITRE: 1
+    GALLON: 3780,
+    LITRE: 1000,
+    MILILITRE: 1
 }
 module.exports = {
     length: Length,
