@@ -49,4 +49,11 @@ describe('add 2 unit values', () => {
             assert.equal(add, 1001);
         }
     })
+
+    it('should return 1001kg if 1tonne and 1000gm passed', () => {
+        weight1 = new quantityMeasurement(unit.weight.TONNE, 1);
+        weight2 = new quantityMeasurement(unit.volume.GALLON, 1);
+        let weightObj = weight1.equal(weight1, weight2);
+        assert.equal(weightObj,false)
+    })
 })
