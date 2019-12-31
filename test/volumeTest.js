@@ -38,3 +38,25 @@ describe('gallon to gallon', () => {
         assert.equal(volumeObj, true);
     });
 })
+
+describe('add 2 unit values', () => {
+    it('should return true if 1gallon and 3.78litre passed', function () {
+        volume1 = new quantityMeasurement(unit.volume.GALLON, 1);
+        volume2 = new quantityMeasurement(unit.volume.LITRE, 3.78);
+        let volumeObj = volume1.equal(volume1, volume2);
+        if (volumeObj){
+            let add  = volume1.add(volume1, volume2, unit.volume.LITRE);
+            assert.equal(add, 7.56)
+        }
+    });
+
+    it('should return true if 1litre and 1000ml passed', function () {
+        volume1 = new quantityMeasurement(unit.volume.LITRE, 1);
+        volume2 = new quantityMeasurement(unit.volume.MILILITRE, 1000);
+        let volumeObj = volume1.equal(volume1, volume2);
+        if (volumeObj){
+            let add  = volume1.add(volume1, volume2, unit.volume.LITRE);
+            assert.equal(add, 2)
+        }
+    });
+})
