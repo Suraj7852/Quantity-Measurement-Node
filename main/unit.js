@@ -10,7 +10,14 @@ const Volume = {
     LITRE: 1000,
     MILILITRE: 1
 }
+
+const Weight = {
+    TONNE: 1000000,
+    KILOGRAM: 1000,
+    GRAM: 1
+}
 module.exports = {
     length: Length,
-    volume: Volume
+    volume: Volume,
+    weight: Weight
 }
