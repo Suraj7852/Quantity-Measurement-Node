@@ -78,3 +78,40 @@ describe('inch to feet', () => {
         assert.equal(lengthObj, true);
     })
 })
+
+describe('feet to yard', () => {
+    it('should return true if 3 feet and 1 yard sent', () => {
+        length1 = new length(unit.FEET, 3);
+        length2 = new length(unit.YARD, 1);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, true);
+    })
+
+    it('should return false if 1feet and 1 yard sent', () => {
+        length1 = new length(unit.FEET, 1);
+        length2 = new length(unit.YARD, 1);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, false);
+    })
+
+    it('should return false if 1inch and 1 yard sent', () => {
+        length1 = new length(unit.INCH, 1);
+        length2 = new length(unit.YARD, 1);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, false);
+    })
+
+    it('should return true if 36inch and 1 yard sent', () => {
+        length1 = new length(unit.INCH, 36);
+        length2 = new length(unit.YARD, 1);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, true);
+    })
+
+    it('should return true if 1yard and 36inch sent', () => {
+        length1 = new length(unit.YARD, 1);
+        length2 = new length(unit.INCH, 36);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, true);
+    })
+})
