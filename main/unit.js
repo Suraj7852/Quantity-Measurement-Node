@@ -1,5 +1,5 @@
 const Length = {
-    FEET: "feet",
-    INCH: "inch"
+    FEET: 12,
+    INCH: 1
 }
 module.exports = Length;
