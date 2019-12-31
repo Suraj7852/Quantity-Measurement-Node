@@ -69,3 +69,12 @@ describe('feet to inch', () => {
         assert.equal(lengthObj, false);
     })
 })
+
+describe('inch to feet', () => {
+    it('should return true if 12inch and 1 feet sent', () => {
+        length1 = new length(unit.INCH, 12);
+        length2 = new length(unit.FEET, 1);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, true);
+    })
+})
