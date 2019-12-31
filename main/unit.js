@@ -16,8 +16,14 @@ const Weight = {
     KILOGRAM: 1000,
     GRAM: 1
 }
+
+const Temperature = {
+    CELSIUS: "celcius",
+    FAHRENHEIT: "fahrenheit"
+}
 module.exports = {
     length: Length,
     volume: Volume,
-    weight: Weight
+    weight: Weight,
+    temperature: Temperature
 }

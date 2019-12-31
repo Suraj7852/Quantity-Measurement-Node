@@ -130,8 +130,8 @@ describe('adding two values', () => {
         quantityMeasurement1 = new quantityMeasurement(unit.length.INCH, 2);
         quantityMeasurement2 = new quantityMeasurement(unit.length.INCH, 2);
         let quantityMeasurementObj = quantityMeasurement1.equal(quantityMeasurement1, quantityMeasurement2);
-        if(quantityMeasurementObj){
-            let add = quantityMeasurement1.add(quantityMeasurement1,quantityMeasurement2,unit.length.INCH);
+        if (quantityMeasurementObj) {
+            let add = quantityMeasurement1.add(quantityMeasurement1, quantityMeasurement2, unit.length.INCH);
             assert.equal(add, 4)
         }
     })
@@ -140,8 +140,8 @@ describe('adding two values', () => {
         quantityMeasurement1 = new quantityMeasurement(unit.length.FEET, 1);
         quantityMeasurement2 = new quantityMeasurement(unit.length.INCH, 2);
         let quantityMeasurementObj = quantityMeasurement1.equal(quantityMeasurement1, quantityMeasurement2);
-        if(quantityMeasurementObj){
-            let add = quantityMeasurement1.add(quantityMeasurement1,quantityMeasurement2,unit.length.INCH);
+        if (quantityMeasurementObj) {
+            let add = quantityMeasurement1.add(quantityMeasurement1, quantityMeasurement2, unit.length.INCH);
             assert.equal(add, 14)
         }
     })
@@ -150,8 +150,8 @@ describe('adding two values', () => {
         quantityMeasurement1 = new quantityMeasurement(unit.length.FEET, 1);
         quantityMeasurement2 = new quantityMeasurement(unit.length.FEET, 1);
         let quantityMeasurementObj = quantityMeasurement1.equal(quantityMeasurement1, quantityMeasurement2);
-        if(quantityMeasurementObj){
-            let add = quantityMeasurement1.add(quantityMeasurement1,quantityMeasurement2,unit.length.INCH);
+        if (quantityMeasurementObj) {
+            let add = quantityMeasurement1.add(quantityMeasurement1, quantityMeasurement2, unit.length.INCH);
             assert.equal(add, 24)
         }
     })
@@ -160,8 +160,8 @@ describe('adding two values', () => {
         quantityMeasurement1 = new quantityMeasurement(unit.length.INCH, 2);
         quantityMeasurement2 = new quantityMeasurement(unit.length.CENTIMETER, 2.54);
         let quantityMeasurementObj = quantityMeasurement1.equal(quantityMeasurement1, quantityMeasurement2);
-        if(quantityMeasurementObj){
-            let add = quantityMeasurement1.add(quantityMeasurement1,quantityMeasurement2,unit.length.INCH);
+        if (quantityMeasurementObj) {
+            let add = quantityMeasurement1.add(quantityMeasurement1, quantityMeasurement2, unit.length.INCH);
             assert.equal(add, 3)
         }
     })
