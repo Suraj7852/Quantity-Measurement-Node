@@ -115,3 +115,12 @@ describe('feet to yard', () => {
         assert.equal(lengthObj, true);
     })
 })
+
+describe('inch to centimetre', () => {
+    it('should return true if 2inch and 5centimeter sent', () => {
+        length1 = new length(unit.INCH, 2);
+        length2 = new length(unit.CENTIMETER, 5.08);
+        let lengthObj = length1.equal(length1, length2);
+        assert.equal(lengthObj, true);
+    })
+})

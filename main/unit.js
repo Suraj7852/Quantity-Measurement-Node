@@ -1,6 +1,7 @@
 const Length = {
-    FEET: 12,
-    INCH: 1,
-    YARD: 36
+    FEET: 30.48,
+    INCH: 2.54,
+    YARD: 91.44,
+    CENTIMETER: 1
 }
 module.exports = Length;
