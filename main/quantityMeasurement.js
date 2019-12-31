@@ -1,4 +1,4 @@
-class Length {
+class QuantityMeasurement {
     constructor(unit, value) {
         this.unit = unit;
         this.value = value;
@@ -23,4 +23,4 @@ class Length {
         return false;
     }
 }
-module.exports = Length;
+module.exports = QuantityMeasurement;

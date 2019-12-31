@@ -4,4 +4,12 @@ const Length = {
     YARD: 91.44,
     CENTIMETER: 1
 }
-module.exports = Length;
+
+const Volume = {
+    GALLON: 3.78,
+    LITRE: 1
+}
+module.exports = {
+    length: Length,
+    volume: Volume
+}
