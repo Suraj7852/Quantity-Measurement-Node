@@ -1,3 +1,4 @@
+let unit = require('./unit');
 class QuantityMeasurement {
     constructor(unit, value) {
         this.unit = unit;
@@ -5,9 +6,9 @@ class QuantityMeasurement {
     }
 
     compare(obj1, obj2) {
-        if (obj1.unit == "celcius")
+        if (obj1.unit == unit.temperature.CELSIUS)
             return (obj1.value * (9 / 5)) + 32 == obj2.value;
-        if (obj1.unit == "fahrenheit")
+        if (obj1.unit == unit.temperature.FAHRENHEIT)
             return (obj1.value - 32) * (5 / 9) == obj2.value;
         return obj1.value * obj1.unit == obj2.value * obj2.unit;
     }
